@@ -1,0 +1,145 @@
+body{
+    /* background-color: cornflowerblue;*/
+     text-align: center;
+     
+ }
+
+.container{
+     display: grid;
+     grid-template-columns: repeat(1500, 1fr);
+     grid-auto-rows: minmax(50px, auto);
+     grid-gap: 0px;
+     margin: 0 ;
+ }
+.container>*{
+     padding: 10px;
+     color: white;
+ }
+
+ /* HEADER */
+ header{
+    background-color:rgb(15, 14, 14);
+    grid-column: 170/1500;
+    overflow: auto;
+ }
+ h1{
+    text-shadow:6px 6px 10px rgb(217, 217, 240);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-style: oblique;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: 50% 50% 20%;
+    margin: 0 auto;
+    max-width: 960px;
+    font-size: 5rem;
+    background-blend-mode: lighten;
+    text-shadow: rgb(172, 169, 167);
+    font-variant-position: super;
+    text-decoration-color: white;
+  
+  }
+  .header-right a {
+    margin-top: 20px;
+    float: left;
+    color:white;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 15px;
+    border-radius: 4px;
+}
+.header-right a:hover {
+    background-color: rgb(145, 143, 143);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+  
+.header-right a.active {
+    background-color: rgb(145, 143, 143);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+  
+.header-right {
+    float: right;
+    margin-right: 20px;
+    
+}  
+/* NAVIGATION BAR */
+ nav{
+    background-color:rgb(22, 22, 22);
+    color: white;
+    grid-column: 1/170;
+    grid-row: 1/50;
+    overflow: auto;
+ }
+.sidenav-left h2 {
+    text-shadow:6px 6px 10px rgb(217, 217, 240);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-style: oblique;
+    font-size: 2rem;
+    background-blend-mode: lighten;
+    text-shadow: rgb(172, 169, 167);
+    font-variant-position: super;
+
+}
+  /* The navigation menu links */
+.sidenav-left a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav-left a:hover {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+  }
+  .sidenav-left a.active {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 500px) {
+    .sidenav-left a {
+      float: none;
+      display: block;
+    }
+  }
+ /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+    .sidenav-left {padding-top: 15px;}
+    .sidenav-left a {font-size: 18px;}
+  }
+  
+@media screen and (max-width: 450px){
+    .shopify-section .feature-row__text {
+        text-align:center!important;
+    }
+    }
+
+
+ /* MAIN */
+ main{
+    background-color: black;
+    grid-row: 2/50;
+     grid-column: 170/1500;
+     overflow: auto;
+ }
+
+ /* FOOTER */
+footer {
+    grid-column: 1/1500;
+    grid: 51/60;
+}
+ input:checked+.container{
+     display: grid;
+ }

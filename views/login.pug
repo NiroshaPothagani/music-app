@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1.0')
+    title login 
+    // CSS only
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    // JS, Popper.js, and jQuery
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    //- //
+    //-   by using 'INTEGGRETY= Subresource Integrity (SRI)
+    //-   is a security feature that enables browsers
+    //-   to verify that resources they fetch (for example, from a CDN)
+    //-   are delivered without unexpected manipulation.
+    //-   It works by allowing you to provide a cryptographic hash that a fetched resource must match.'
+    link(rel='stylesheet', href='loginandsignup.css')
+
+  body
+    .d-flex-container
+      form.form
+        h2.text-center Login
+        .form-group
+          .input-group-prepend
+            span.input-group-text
+              i.fa.fa-user
+            input#emailid.form-control(type='text', placeholder='email', required='required')
+        .form-group
+          .input-group-prepend
+            span.input-group-text
+              i.fa.fa-key
+            input#password.form-control(type='password', placeholder='Password', required='required')
+        button.btn.btn-primary.btn-block(type='submit') login
+        .clearfix
+          label.pull-left.checkbox-inline.padding
+            input(type='checkbox')
+            | Remember me
+          a.pull-right(href='#') Forgot Password?
+        hr.light
+        a.account(href='home.html') create an account.
+script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+script(src="/js/login.js")
